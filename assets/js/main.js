@@ -144,15 +144,15 @@ function validarEmail(email) {
 }
 
 // Dark Mode Toggle
-const darkModeToggle = document.createElement('button');
-darkModeToggle.className = 'btn btn-outline-light me-3';
-darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
-document.querySelector('.navbar')?.appendChild(darkModeToggle);
+// const darkModeToggle = document.createElement('button');
+// darkModeToggle.className = 'btn btn-outline-light me-3';
+// darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+// document.querySelector('.navbar')?.appendChild(darkModeToggle);
 
-darkModeToggle.addEventListener('click', function() {
-    document.body.setAttribute('data-theme', 'dark');
-    localStorage.setItem('theme', 'dark');
-});
+// darkModeToggle.addEventListener('click', function() {
+//     document.body.setAttribute('data-theme', 'dark');
+//     localStorage.setItem('theme', 'dark');
+// });
 
 // Verifica se o usuário já estava em modo escuro
 if (localStorage.getItem('theme') === 'dark') {
