@@ -1,0 +1,19 @@
+{
+    "clientes": [
+        {
+            "id": 1,
+            "nome": "Cliente Exemplo",
+            "email": "cliente@exemplo.com",
+            "telefone": "(11) 99999-9999"
+        }
+    ],
+    "agendamentos": [
+        {
+            "id": 1,
+            "clienteId": 1,
+            "data": "2023-11-20",
+            "horario": "14:00",
+            "status": "confirmado"
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+# Dependências
+node_modules/
+vendor/
+
+# Ambiente de desenvolvimento
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários
+*.tmp
+*.temp
+
+# Build
+build/
+dist/
+
+# Arquivos de backup
+*.bak
+*.backup
+
+# Arquivos de configuração local
+config/local.json
+config/local.*.json
+
+# Imagens temporárias
+*.psd
+*.ai
+*.sketch

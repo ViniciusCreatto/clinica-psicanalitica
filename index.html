@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica de Psicanálise - Dr. João Silva</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Animate.css para animações -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="assets/images/logo.png" alt="Logo" height="40">
+                Clínica de Psicanálise
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicos">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#beneficios">Benefícios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#fluxo">Fluxo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section py-5">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-md-6">
+                    <h1 class="display-4 fw-bold mb-4 animate__animated animate__fadeInUp">Transforme Sua Vida</h1>
+                    <p class="lead mb-4 animate__animated animate__fadeInUp animate__delay-1s">
+                        Descubra como a psicanálise pode ajudar você a encontrar equilíbrio e bem-estar
+                    </p>
+                    <button class="btn btn-primary btn-lg animate__animated animate__fadeInUp animate__delay-2s" 
+                            data-bs-toggle="modal" data-bs-target="#agendamentoModal">
+                        Agendar Consulta
+                    </button>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/images/hero-image.jpg" alt="Psicanálise" class="img-fluid animate__animated animate__fadeInRight">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de Agendamento -->
+    <div class="modal fade" id="agendamentoModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Agendar Consulta</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="agendamentoForm">
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="nome" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefone" class="form-label">Telefone</label>
+                            <input type="tel" class="form-control" id="telefone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="data" class="form-label">Data</label>
+                            <input type="date" class="form-control" id="data" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="horario" class="form-label">Horário</label>
+                            <select class="form-select" id="horario" required>
+                                <option value="">Selecione um horário</option>
+                                <option value="09:00">09:00</option>
+                                <option value="10:00">10:00</option>
+                                <option value="11:00">11:00</option>
+                                <option value="14:00">14:00</option>
+                                <option value="15:00">15:00</option>
+                                <option value="16:00">16:00</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Confirmar Agendamento</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sobre -->
+    <section id="sobre" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="mb-4">Sobre o Profissional</h2>
+                    <p class="lead">Dr. João Silva é psicanalista com mais de 15 anos de experiência em tratamentos psicanalíticos.</p>
+                    <p>Formado em Psicologia pela USP, especializado em Psicanálise Clínica, com foco em tratamentos de ansiedade, depressão e questões existenciais.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/images/profissional.jpg" alt="Dr. João Silva" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Serviços</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <i class="fas fa-brain fa-3x mb-3 text-primary"></i>
+                            <h3 class="card-title">Psicanálise Clínica</h3>
+                            <p class="card-text">Tratamento psicanalítico focado em questões emocionais e comportamentais.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <i class="fas fa-user-friends fa-3x mb-3 text-primary"></i>
+                            <h3 class="card-title">Terapia de Casal</h3>
+                            <p class="card-text">Atendimento especializado para casais em busca de melhorar sua relação.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <i class="fas fa-child fa-3x mb-3 text-primary"></i>
+                            <h3 class="card-title">Psicoterapia Infantil</h3>
+                            <p class="card-text">Atendimento especializado para crianças com foco em desenvolvimento emocional.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios -->
+    <section id="beneficios" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Benefícios</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="beneficio">
+                        <i class="fas fa-check-circle text-primary mb-3"></i>
+                        <h3>Atendimento Personalizado</h3>
+                        <p>Tratamento adaptado às necessidades individuais de cada paciente.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="beneficio">
+                        <i class="fas fa-clock text-primary mb-3"></i>
+                        <h3>Flexibilidade de Horários</h3>
+                        <p>Agendamentos flexíveis para se adequar à sua rotina.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="beneficio">
+                        <i class="fas fa-heart text-primary mb-3"></i>
+                        <h3>Ambiente Confortável</h3>
+                        <p>Espaço acolhedor e confidencial para seu tratamento.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fluxo de Atendimento -->
+    <section id="fluxo" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Fluxo de Atendimento</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="passo text-center">
+                        <div class="numero">1</div>
+                        <h3>Agendamento</h3>
+                        <p>Agende sua consulta inicial através do site ou telefone.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="passo text-center">
+                        <div class="numero">2</div>
+                        <h3>Primeira Consulta</h3>
+                        <p>Conhecimento mútuo e definição do tratamento.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="passo text-center">
+                        <div class="numero">3</div>
+                        <h3>Seguimento</h3>
+                        <p>Tratamento regular e acompanhamento contínuo.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="passo text-center">
+                        <div class="numero">4</div>
+                        <h3>Resultados</h3>
+                        <p>Melhorias significativas em sua qualidade de vida.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Contato</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <form id="contatoForm">
+                        <div class="mb-3">
+                            <label for="nomeContato" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="nomeContato" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailContato" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="emailContato" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="mensagem" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <div class="info-contato">
+                        <h3>Informações de Contato</h3>
+                        <p><i class="fas fa-phone me-2"></i> (11) 99999-9999</p>
+                        <p><i class="fas fa-envelope me-2"></i> contato@psicanalise.com</p>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> Rua Exemplo, 123 - São Paulo, SP</p>
+                        <div class="mt-4">
+                            <h3>Siga-nos nas redes sociais</h3>
+                            <a href="#" class="social-link me-3"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-link me-3"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Clínica de Psicanálise</h5>
+                    <p>Atendimento psicanalítico especializado</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-light">Home</a></li>
+                        <li><a href="#sobre" class="text-light">Sobre</a></li>
+                        <li><a href="#servicos" class="text-light">Serviços</a></li>
+                        <li><a href="#contato" class="text-light">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Horário de Atendimento</h5>
+                    <p>Segunda a Sexta: 08:00 - 20:00</p>
+                    <p>Sábado: 09:00 - 13:00</p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p>&copy; 2023 Clínica de Psicanálise. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript personalizado -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
